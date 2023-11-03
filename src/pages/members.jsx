@@ -41,6 +41,7 @@ const Members = () => {
     // 멤버별 RSS 피드 가져오기
     Data.forEach((member) => {
       const RSS_FEED_URL = `/rss/${member.velog}`;
+      console.log(RSS_FEED_URL);
       axios
         .get(RSS_FEED_URL)
         .then((response) => {
@@ -80,7 +81,6 @@ const Members = () => {
         });
     });
   }, []);
-  console.log(rssTitles);
 
   return (
     <div className="px-24 bg-black text-gray-300 py-10">
