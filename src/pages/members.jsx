@@ -80,7 +80,6 @@ const Members = () => {
         });
     });
   }, []);
-  console.log(RSS_FEED_URL);
   console.log(rssTitles);
 
   return (
