@@ -40,7 +40,7 @@ const Members = () => {
   useEffect(() => {
     // 멤버별 RSS 피드 가져오기
     Data.forEach((member) => {
-      const RSS_FEED_URL = `https://v2.velog.io/rss/${member.velog}`;
+      const RSS_FEED_URL = `/rss/${member.velog}`;
       console.log(RSS_FEED_URL);
       axios
         .get(RSS_FEED_URL)
@@ -48,6 +48,7 @@ const Members = () => {
           const parser = new DOMParser();
           const xmlDoc = parser.parseFromString(response.data, "text/xml");
           const itemElements = xmlDoc.querySelectorAll("item");
+          console.log(itemElements);
 
           if (itemElements.length >= 1) {
             const memberRssTitle =
