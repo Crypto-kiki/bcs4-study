@@ -9,7 +9,7 @@
 .wrapper {
   height: 100%;
   width: 100%;
-  background: linear-gradient(180deg, #db56fc, 5%, #e860fa, 50%, #690969);
+  background: linear-gradient(180deg, #e786ff, 5%, #ea8cf7, 50%, #9e0e9e);
   position: absolute;
 }
 .wrapper main {
