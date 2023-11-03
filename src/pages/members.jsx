@@ -70,6 +70,7 @@ const Members = () => {
               [member.velog]: memberRssLink,
             }));
           }
+          console.log(itemElements);
         })
         .catch((error) => {
           console.error(
@@ -79,6 +80,8 @@ const Members = () => {
         });
     });
   }, []);
+  console.log(RSS_FEED_URL);
+  console.log(rssTitles);
 
   return (
     <div className="px-24 bg-black text-gray-300 py-10">
