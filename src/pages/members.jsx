@@ -81,10 +81,10 @@ const Members = () => {
   }, []);
 
   return (
-    <div className="px-24 bg-black text-gray-300">
+    <div className="px-24 bg-black text-gray-300 py-10">
       <header className="py-6 font-bold text-white">
         <div className="flex justify-between items-center">
-          <div className="text-4xl">Blockchain School 4th</div>
+          <div className="text-4xl">블록체인 스쿨 4기</div>
           <div className="text-lg">수료까지 D {daysRemaining}</div>
         </div>
         <div className="mt-10">
